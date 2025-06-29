@@ -1,13 +1,13 @@
 import "../Styles/Home.scss";
 import { FaGithub, FaLinkedin, FaDiscord, FaGlobe } from "react-icons/fa";
-import avatar from "../assets/avatar.JPG";
+import myself from "../assets/Myself.jpg";
 
 const links = [
   { name: "Github", icon: <FaGithub />, url: "https://github.com/IshaDabas" },
   {
     name: "Portfolio",
     icon: <FaGlobe />,
-    url: "https://isha-dabas.vercel.app/",
+    url: "https://www.ishadabas.com/",
   },
   {
     name: "LinkedIn",
@@ -26,7 +26,7 @@ const Home = () => {
     <>
       <div className="home">
         <header className="header">
-          <img className="profile-pic" src={avatar} alt="Profile" />
+          <img className="profile-pic" src={myself} alt="Profile" />
         </header>
         <div className="link-container">
           {links.map((link, index) => (
